@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
+<title>Hello Millky</title>
+	<script src="/js/jquery-3.3.1.js"></script>
+	<script src="/js/bootstrap.js"></script>
+	
+	<link href="/css/bootstrap.css" rel="stylesheet">        
+</head>
+<body>
+
+	<!--/* <xmp> */-->	
+	<table class="table table-hover">
+		<tbody>
+			<tr th:each="data: ${multiMap}">
+				<th scope="row" th:text="${data.text}">
+					<a href="">
+						title
+					</a>
+				</th>
+			</tr>
+		</tbody>
+	</table> 
+
+</body>
+</html>
